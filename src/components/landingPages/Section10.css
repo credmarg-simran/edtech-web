@@ -1,0 +1,100 @@
+
+.section10-container10{
+    background-color: #171421;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container10-divisions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.container10-divisions-line{
+    background: hsla(0, 0%, 10%, 1);
+    background: linear-gradient(0deg, hsla(0, 0%, 10%, 1) 0%, hsla(0, 0%, 85%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(0, 0%, 10%, 1) 0%, hsla(0, 0%, 85%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(0, 0%, 10%, 1) 0%, hsla(0, 0%, 85%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#191919", endColorstr="#D9D9D9", GradientType=1 );
+    width: 2px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.container10-divisions-heading{
+    text-align: center;
+    color: #8665cc;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.container10-divisions-subheading{
+    margin-top: 30px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 700;
+    width: 60%;    
+}
+.container10-divisions-pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container10-divisions-pictures-2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container10-divisions-button button{
+  color: aliceblue;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section10-container10{
+        width: 100%;
+    }
+    .container10-divisions{
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .container10-divisions-subheading{
+        font-size: 25px;
+        width: 85%;
+    }
+    .container10-divisions-pictures {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent images from wrapping */
+        margin-top: 20px; /* Adjust margin */
+        width: 100%;
+        display: flex;
+        
+        
+    }
+    .container10-divisions-pictures img {
+        width: 300px; /* Adjust image size for smaller screens */
+        margin: 10px; /* Adjust margin between images */
+        flex-shrink: 0;
+    }
+    .container10-divisions-pictures img:first-child{
+        margin-left: 10px;
+    }
+}
+
+
+
